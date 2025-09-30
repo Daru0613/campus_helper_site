@@ -1,33 +1,39 @@
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import Navbar from '@/components/ui/Navbar'
-import { Calendar, BookOpen, Utensils, Bell } from 'lucide-react'
+import { Cog, Bus, Utensils, Bell } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 
 const Index = () => {
+  const navigate = useNavigate()
   const menuItems = [
     {
       title: 'autOTP',
       description: 'OTP 자동 로그인',
-      icon: Calendar,
+      icon: Cog,
       color: 'from-primary to-accent',
+      route: '/Autotp',
     },
     {
       title: '셔틀버스 알리미',
       description: '셔틀버스 시간표 및 알람',
-      icon: BookOpen,
+      icon: Bus,
       color: 'from-secondary to-primary',
+      route: '/Bus',
     },
     {
       title: '식당',
       description: '학식 메뉴 업데이트',
       icon: Utensils,
       color: 'from-accent to-secondary',
+      route: '/Meal',
     },
     {
       title: 'LMS 알리미',
       description: '시간표 및 알람 기능',
       icon: Bell,
       color: 'from-primary to-secondary',
+      route: '/Lms',
     },
   ]
 
@@ -54,6 +60,7 @@ const Index = () => {
                 <Button
                   variant="ghost"
                   className="w-full h-32 p-6 bg-gradient-card backdrop-blur-sm border border-white/20 shadow-card hover:shadow-soft transition-all duration-300 hover:scale-105 rounded-lg"
+                  onClick={() => item.route && navigate(item.route)}
                 >
                   <div className="flex flex-col items-center space-y-3">
                     <div

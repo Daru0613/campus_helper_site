@@ -20,19 +20,19 @@ const Navbar = () => (
       ))}
     </ul>
     <div className="flex items-center gap-3">
-      {/* 회원가입 버튼 */}
-      <Button
-        variant="outline"
-        className="bg-white/30 text-gray-600 border-white/40 hover:bg-white/50"
-      >
-        회원가입
-      </Button>
       {/* 로그인 버튼 */}
       <Button
         variant="outline"
         className="bg-white/30 text-gray-600 border-white/40 hover:bg-white/50"
       >
         로그인
+      </Button>
+      {/* 회원가입 버튼 */}
+      <Button
+        variant="outline"
+        className="bg-white/30 text-gray-600 border-white/40 hover:bg-white/50"
+      >
+        회원가입
       </Button>
     </div>
   </nav>
