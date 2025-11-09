@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import Navbar from '@/components/ui/Navbar'
-import { Cog, Bus, Utensils, Bell } from 'lucide-react'
+import { Cog, Bell } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 
 const Index = () => {
@@ -13,20 +13,6 @@ const Index = () => {
       icon: Cog,
       color: 'from-primary to-accent',
       route: '/Autotp',
-    },
-    {
-      title: '셔틀버스 알리미',
-      description: '셔틀버스 시간표 및 알람',
-      icon: Bus,
-      color: 'from-secondary to-primary',
-      route: '/Bus',
-    },
-    {
-      title: '식당',
-      description: '학식 메뉴 업데이트',
-      icon: Utensils,
-      color: 'from-accent to-secondary',
-      route: '/Meal',
     },
     {
       title: 'LMS 알리미',
