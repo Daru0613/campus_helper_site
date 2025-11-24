@@ -22,7 +22,7 @@ export default function Autotp() {
             className="text-lg px-8 py-6 h-16 bg-white hover:bg-gray-50 text-gray-800 shadow-lg hover:shadow-xl transition-all mb-16 border border-gray-200"
             onClick={() =>
               window.open(
-                'https://drive.google.com/file/d/1i1HAPxY7z639q700UzFkN7WVkC5hQ0T8/view?usp=drive_link',
+                'https://www.dropbox.com/scl/fi/u96if4ky28saftlrbof5v/autOTP_v2.0.zip?rlkey=8cy2wsgy3su1xfjxkdlg6anqv&st=d04i7nqe&dl=0',
                 '_blank'
               )
             }
