@@ -20,6 +20,12 @@ export default function Autotp() {
           <Button
             size="lg"
             className="text-lg px-8 py-6 h-16 bg-white hover:bg-gray-50 text-gray-800 shadow-lg hover:shadow-xl transition-all mb-16 border border-gray-200"
+            onClick={() =>
+              window.open(
+                'https://drive.google.com/uc?export=download&id=1cWtNil_NJsESri2jKU4fgwd56xi9GZxL',
+                '_blank'
+              )
+            }
           >
             <Download className="w-6 h-6 mr-3" />
             Download for Windows
@@ -185,6 +191,132 @@ export default function Autotp() {
                     </span>
                   </React.Fragment>
                 ))}
+              </div>
+            </div>
+
+            {/* Setting 박스들 */}
+            <div
+              className="bg-white/20 backdrop-blur-xl rounded-[2.5rem] shadow-2xl border border-white/30"
+              style={{ padding: '35px' }}
+            >
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="bg-white/30 backdrop-blur-md rounded-[2rem] p-6 border border-white/40">
+                  <img
+                    src="/setting1.png"
+                    alt="Setting 1"
+                    className="w-full h-auto rounded-3xl shadow-lg"
+                  />
+                </div>
+
+                <div className="text-foreground">
+                  <h3 className="text-4xl font-bold mb-4 uppercase tracking-tight">
+                    STEP 1
+                  </h3>
+                  <p className="text-muted-foreground text-base leading-relaxed">
+                    윈도우 설정 - Bluetooth 및 장치 - 모바일 장치 순으로 클릭
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="bg-white/20 backdrop-blur-xl rounded-[2.5rem] shadow-2xl border border-white/30"
+              style={{ padding: '35px' }}
+            >
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="text-foreground">
+                  <h3 className="text-4xl font-bold mb-4 uppercase tracking-tight">
+                    STEP 2
+                  </h3>
+                  <p className="text-muted-foreground text-base leading-relaxed">
+                    휴대폰과 연결기능 활성화 및 절차에 따라 휴대폰과 연결
+                  </p>
+                </div>
+
+                <div className="bg-white/30 backdrop-blur-md rounded-[2rem] p-6 border border-white/40">
+                  <img
+                    src="/setting2.png"
+                    alt="Setting 2"
+                    className="w-full h-auto rounded-3xl shadow-lg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="bg-white/20 backdrop-blur-xl rounded-[2.5rem] shadow-2xl border border-white/30"
+              style={{ padding: '35px' }}
+            >
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="bg-white/30 backdrop-blur-md rounded-[2rem] p-6 border border-white/40">
+                  <img
+                    src="/setting3.png"
+                    alt="Setting 3"
+                    className="w-full h-auto rounded-3xl shadow-lg"
+                  />
+                </div>
+
+                <div className="text-foreground">
+                  <h3 className="text-4xl font-bold mb-4 uppercase tracking-tight">
+                    STEP 3
+                  </h3>
+                  <p className="text-muted-foreground text-base leading-relaxed">
+                    휴대폰과 연결 창 활성화 후 앱 탭에서 <br /> ISign+ OTP 앱
+                    검색 후 시작메뉴에 추가
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              className="bg-white/20 backdrop-blur-xl rounded-[2.5rem] shadow-2xl border border-white/30"
+              style={{ padding: '35px' }}
+            >
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="text-foreground">
+                  <h3 className="text-4xl font-bold mb-4 uppercase tracking-tight">
+                    STEP 4
+                  </h3>
+                  <p className="text-muted-foreground text-base leading-relaxed">
+                    윈도우 검색창에서 ISign+ OTP 앱 검색 후 작업표시줄에 고정
+                  </p>
+                </div>
+
+                <div className="bg-white/30 backdrop-blur-md rounded-[2rem] p-6 border border-white/40">
+                  <img
+                    src="/setting4.png"
+                    alt="Setting 4"
+                    className="w-full h-auto rounded-3xl shadow-lg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="bg-white/20 backdrop-blur-xl rounded-[2.5rem] shadow-2xl border border-white/30"
+              style={{ padding: '35px' }}
+            >
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="bg-white/30 backdrop-blur-md rounded-[2rem] p-6 border border-white/40">
+                  <img
+                    src="/setting5.png"
+                    alt="Setting 5"
+                    className="w-full h-auto rounded-3xl shadow-lg"
+                  />
+                </div>
+
+                <div className="text-foreground">
+                  <h3 className="text-4xl font-bold mb-4 uppercase tracking-tight">
+                    STEP 5
+                  </h3>
+                  <p className="text-muted-foreground text-base leading-relaxed">
+                    autOTP 앱을 실행하고 학교 계정 등록 및 설정 저장
+                    <br />
+                    <br />
+                    - 오른쪽 상단 위 아이콘으로 테마 설정 가능
+                    <br />- 윈도우 시작 시 자동 실행 버튼 클릭시 부팅 이후 자동
+                    실행
+                  </p>
+                </div>
               </div>
             </div>
           </div>

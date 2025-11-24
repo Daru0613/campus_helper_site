@@ -7,7 +7,6 @@ import Index from './pages/Index'
 import NotFound from './pages/NotFound'
 import Test from './pages/ComponetsTest'
 import Autotp from './pages/Autotp'
-import Lms from './pages/Lms'
 
 const queryClient = new QueryClient()
 
@@ -22,7 +21,6 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
           <Route path="/Test" element={<Test />} />
           <Route path="/Autotp" element={<Autotp />} />
-          <Route path="/Lms" element={<Lms />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

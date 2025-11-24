@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import Navbar from '@/components/ui/Navbar'
-import { Cog, Bell } from 'lucide-react'
+import { Cog } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 
 const Index = () => {
@@ -13,13 +13,6 @@ const Index = () => {
       icon: Cog,
       color: 'from-primary to-accent',
       route: '/Autotp',
-    },
-    {
-      title: 'LMS 알리미',
-      description: '시간표 및 알람 기능',
-      icon: Bell,
-      color: 'from-primary to-secondary',
-      route: '/Lms',
     },
   ]
 
@@ -38,27 +31,27 @@ const Index = () => {
         </div>
 
         {/* Menu Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+        <div className="flex justify-center w-full">
           {menuItems.map((item, index) => {
             const IconComponent = item.icon
             return (
-              <Card key={index} className="group">
+              <Card key={index} className="group w-full max-w-lg">
                 <Button
                   variant="ghost"
-                  className="w-full h-32 p-6 bg-gradient-card backdrop-blur-sm border border-white/20 shadow-card hover:shadow-soft transition-all duration-300 hover:scale-105 rounded-lg"
+                  className="w-full h-48 p-8 bg-gradient-card backdrop-blur-sm border-2 border-white/30 shadow-card hover:shadow-soft transition-all duration-300 hover:scale-105 rounded-2xl"
                   onClick={() => item.route && navigate(item.route)}
                 >
-                  <div className="flex flex-col items-center space-y-3">
+                  <div className="flex flex-col items-center space-y-4">
                     <div
-                      className={`p-3 rounded-full bg-gradient-to-r ${item.color} shadow-md`}
+                      className={`p-5 rounded-full bg-gradient-to-r ${item.color} shadow-lg`}
                     >
-                      <IconComponent className="w-8 h-8 text-white" />
+                      <IconComponent className="w-12 h-12 text-white" />
                     </div>
                     <div className="text-center">
-                      <h3 className="text-lg font-semibold text-foreground mb-1">
+                      <h3 className="text-2xl font-bold text-foreground mb-2">
                         {item.title}
                       </h3>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-base text-muted-foreground">
                         {item.description}
                       </p>
                     </div>

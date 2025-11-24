@@ -1,9 +1,6 @@
 // src/components/Navbar.tsx
 import React from 'react'
-import { Button } from '@/components/ui/button'
 import { useNavigate } from 'react-router-dom'
-
-const menuItems = ['autOTP', 'LMS 알리미']
 
 const Navbar = () => {
   const navigate = useNavigate()
@@ -17,33 +14,17 @@ const Navbar = () => {
       >
         Campus Helper
       </div>
-      {/* 메뉴 */}
-      <ul className="flex-1 flex justify-center gap-8">
-        {menuItems.map((item, idx) => (
-          <li
-            key={idx}
-            className="text-gray-500 text-base font-medium hover:text-accent transition-colors cursor-pointer"
-          >
-            {item}
-          </li>
-        ))}
-      </ul>
-      <div className="flex items-center gap-3">
-        {/* 로그인 버튼 */}
-        <Button
-          variant="outline"
-          className="bg-white/30 text-gray-600 border-white/40 hover:bg-white/50"
+      {/* autOTP 버튼 - 가운데 정렬 */}
+      <div className="absolute left-1/2 transform -translate-x-1/2">
+        <button
+          onClick={() => navigate('/Autotp')}
+          className="text-gray-500 text-base font-medium hover:text-accent transition-colors cursor-pointer"
         >
-          로그인
-        </Button>
-        {/* 회원가입 버튼 */}
-        <Button
-          variant="outline"
-          className="bg-white/30 text-gray-600 border-white/40 hover:bg-white/50"
-        >
-          회원가입
-        </Button>
+          autOTP
+        </button>
       </div>
+      {/* 오른쪽 공간 확보 */}
+      <div className="w-[120px]"></div>
     </nav>
   )
 }
